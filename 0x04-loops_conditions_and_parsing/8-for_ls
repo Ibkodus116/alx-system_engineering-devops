@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # a Bash script that displays Clock.
 
+for a in $(/bin/ls)
+    do
+        echo "$a"
+done
