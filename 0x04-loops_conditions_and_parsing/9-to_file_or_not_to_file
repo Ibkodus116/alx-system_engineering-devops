@@ -17,6 +17,5 @@ if test -e "$F"
                 echo "$F is a regular file"
         fi
     else
-        echo "$F file does not exists"
+        echo "$F file does not exist"
 fi
-
