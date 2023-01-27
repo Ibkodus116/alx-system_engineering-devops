@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# a Bash script that displays Best School 10 times.
+a=1
+
+while [ $a -lt 101 ];
+do
+
+    if [  $(( a % 3)) == 0  -a $(( a % 5)) == 0 ]
+    then
+        echo "FizzBuzz"
+    elif [ $(( a % 3)) == 0 ]
+    then
+        echo "Fizz"
+    elif [ $(( a % 5 )) == 0 ]
+    then
+        echo "Buzz"
+    else
+        echo $a
+    fi
+    a=$(( a + 1 ))
+done
