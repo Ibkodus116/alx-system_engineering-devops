@@ -3,5 +3,6 @@
 
 for a in $(/bin/ls)
     do
-        echo "$a"
+        # echo "$a"
+        echo "$a" | cut -f 2- -d '-'
 done

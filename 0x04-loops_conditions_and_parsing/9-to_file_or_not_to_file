@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a Bash script that displays Clock.
+
+F=school
+
+if test -e "$F"
+    then
+        echo "$F file exists"
+        if test -s "$F"
+            then
+                echo "$F file is not empty"
+            else
+                echo "$F file is empty"
+        fi
+        if test -f "$F"
+            then
+                echo "$F is a regular file"
+        fi
+    else
+        echo "$F file does not exists"
+fi
+
