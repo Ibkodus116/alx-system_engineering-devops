@@ -1,1 +1,2 @@
-This is the READme
+This is the README file 
+for configuration management!
