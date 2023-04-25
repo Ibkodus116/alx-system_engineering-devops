@@ -1,0 +1,9 @@
+# this is my configuration file
+# found it ~/.ssh/config
+
+
+Host ibukun
+    Hostname 54.242.112.151
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
