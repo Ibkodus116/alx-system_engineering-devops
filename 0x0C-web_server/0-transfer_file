@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Check the number of parameters passed
+if [ $# -lt 4 ]; then
+  echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+  exit 1
+fi
+
+# Get the parameters
+file=$1
+ip=$2
+username=$3
+key=$4
+
+echo "Transferring $file to $username@$ip:~/"
+
+# Disable strict host key checking
+ssh -o StrictHostKeyChecking=no $username@$ip
+
+# Transfer the file
+scp -i $key $file $username@$ip:~/
+
+echo "File transferred successfully!"
+# Exit with success
+exit 0
